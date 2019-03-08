@@ -2224,8 +2224,8 @@ textarea.form-control {
 }
 
 .navbar-toggler {
-/*  margin-top: 19px;
-  margin-bottom: 19px;*/
+  margin-top: 10px;
+  /* margin-bottom: 19px;*/
   border: 0;
 }
 .navbar-toggler .icon-bar {
