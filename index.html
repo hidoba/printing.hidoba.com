@@ -20,13 +20,14 @@
     <link href="assets/css/demo.css" rel="stylesheet" />
 
     <!--     Fonts and icons     -->
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
 
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-md fixed-top navbar-transparent" color-on-scroll="200">
         <div class="container">
             <div class="navbar-translate" style="display:flex!important">
@@ -86,7 +87,7 @@
 
 
     <!-- SignUpModal -->
-    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
+<!--     <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -108,7 +109,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -116,7 +117,7 @@
     <div class="wrapper">
         <div class="page-header section-dark" data-parallax="true" style="background-image: url('assets/img/intro.jpg')">
 
-            <video autoplay muted loop id="introVideo">
+            <video autoplay playsinline muted loop id="introVideo">
               <source src="assets/img/intro.mp4" type="video/mp4">
             </video>
             <!-- <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div> -->
@@ -218,7 +219,7 @@
                             <p>And we love to be different.</p>
                              <p>How? (You want me to tell you or <u>show</u> you?)</p>
 
-				            <video autoplay muted loop id="luminosityVideo" class="img-rounded img-responsive">
+				            <video autoplay playsinline muted loop id="luminosityVideo" class="img-rounded img-responsive">
 				              <source src="assets/img/luminosity.mp4" type="video/mp4">
 				            </video>
                              
@@ -365,9 +366,9 @@
 
 
 
-        <div class="page-header" style="background-color: white;">
+        <div style="background-color: white;">
             <!-- <div class="filter"></div> -->
-                    		<video autoplay muted loop id="luminosityVideo" style="min-width:100%; min-height:100%;">
+                    		<video autoplay playsinline muted loop id="wallVideo" style="width:100%;">
 				              <source src="assets/img/bigPrint.mp4" type="video/mp4">
 				            </video>
         </div>
@@ -379,15 +380,19 @@
         <div class="main" id="contact">
             <div class="section" style="background-color: #EEE;">
                 <div class="container">
-                        <div class="col-md-6 ml-auto mr-auto" style="margin-top: 35px;">
+                        <div class="col-md-6 ml-auto mr-auto contacts" style="margin-top: 35px;">
                             <!-- <h2 class="title text-center" style="line-height: 1.3;">TODO add one more CTA</h2>
                             <h2 class="title text-center" style="line-height: 1.3;">TODO add for non-hk customers</h2> -->
                             <h2 class="title text-center" style="line-height: 1.3;">Want to see <u>magic</u>✨ by yourself?</h2>
-                            <p>Easy!</p>
-                            <p>Come visit us at our studio in Tsuen Wan (Hong Kong). Our address:</p>
-                            <blockquote class="blockquote" style="font-size: 0.8em;">
+                            
+
+                            <h6><i class="fa fa-map-marker text-muted"></i> Address</h6>
+                            <p>Come visit us at our studio in Tsuen Wan (Hong Kong):</p>
+                            <blockquote class="blockquote" style="font-size: 1em">
+                                <p>
                                 <a href="geo:22.3738663,114.1085555">Workshop 24, 17/F, Thriving industrial centre, No. 26-38 Sha Tsui Road, Tsuen Wan, New Territories</a>
                                 <button class="btn btn-link" onclick="copyAddress()">(Click to copy address to clipboard)</button>
+                                </p>
                             </blockquote>
                             <script>
                                 function copyAddress() {
@@ -412,10 +417,11 @@
                                 }
                             </script>
                             <p>To make sure there is somebody there, <u>please make appointment</u> first by calling or writing in WhatsApp:</p>
-                            <blockquote class="blockquote">
-                                <a href="tel:+85267568316">+852 6756 8316 (Hong Kong)</a>
-                            </blockquote>
+                            <h6><i class="fa fa-phone"></i> Phone number</h6>
                             
+                                <p><a href="tel:+85267568316">+852 6756 8316 (Hong Kong) + whatsapp</a></p>
+                            
+                            <h6><i class="fa fa-envelope"></i> Email</h6>
                             <p>Don't live in Hong Kong? No worries! Reach us out at:</p>
                             <blockquote class="blockquote">
                                 <a href="mailto:printing1@hidoba.com">printing1@hidoba.com</a>

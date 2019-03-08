@@ -5986,3 +5986,11 @@ textarea.form-control {
     -o-transform-origin: 100% 100%;
     -webkit-transform-origin: 100% 100%;
 }
+
+.contacts p {
+  font-size: 1em;
+}
+
+.contacts h6 {
+  margin-left: -20px;
+}
