@@ -5911,6 +5911,8 @@ textarea.form-control {
   font-weight: 700;
   margin: 0;
   color: #FFFFFF;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #4e6773;
   background: #fbf8ec;
   background: -moz-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
   background: -webkit-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
@@ -5919,6 +5921,13 @@ textarea.form-control {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@media (max-width: 500px) {
+  .presentation-title {
+    font-size: 4em;
+  }
+}
+
 
 .presentation-subtitle {
   font-size: 1.7em;
